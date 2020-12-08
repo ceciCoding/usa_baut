@@ -30,6 +30,8 @@
 body {
     background-color: var(--bg-color);
     width: 100vw;
+    height: auto;
+    min-height: 100vh;
     /* height: var(--view-height); */
     height: auto;
     overflow-x: hidden;
@@ -80,7 +82,6 @@ h2 {
     grid-template-rows: repeat(120, 1fr);
     transform: rotate(var(--grid-rotation-angle));
     margin: 0 auto;
-    margin-left: -2.5rem;
 }
 
 .size-01 {
@@ -205,4 +206,10 @@ h2 {
 #twenty {
     grid-column-start: 56;
     grid-row-start: 113;
+}
+
+@media screen and (min-width: 1100px) {
+    #imgs-grid {
+        margin-left: -2.5rem;
+    }
 }
