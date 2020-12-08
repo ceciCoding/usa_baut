@@ -61,7 +61,7 @@ h2 {
 
 .place {
     position: absolute;
-    right: 5rem;
+    right: 6rem;
     top: 0;
     grid-area: head;
 }
@@ -69,7 +69,7 @@ h2 {
 .date {
     grid-area: foot;
     text-align: right;
-    margin-right: 5rem;
+    margin-right: 6rem;
 }
 
 #imgs-grid {
@@ -81,6 +81,7 @@ h2 {
     grid-template-rows: repeat(120, 1fr);
     transform: rotate(var(--grid-rotation-angle));
     margin: 0 auto;
+    margin-left: -2.5rem;
 }
 
 .size-01 {
