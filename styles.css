@@ -12,7 +12,12 @@
 :root {
     --bg-color: #E1D5C5;
     --view-height: calc(100vw * 1.4);
-    --grid-size: calc(var(--view-height) * 0.66);
+    /* --grid-size: calc(var(--view-height) * 0.66); */
+    --grid-size: 95vw;
+    --size-01: 8;
+    --size-02: 12;
+    --size-03: 16;
+    --size-04: 32;
 }
 
 body {
@@ -29,4 +34,20 @@ body {
     display: grid;
     grid-template-columns: repeat(120, 1fr);
     grid-template-rows: repeat(120, 1fr);
+}
+
+.size-01 {
+    grid-column: span var(--size-01);
+}
+
+.size-02 {
+    grid-column: span var(--size-02);
+}
+
+.size-03 {
+    grid-column: span var(--size-03);
+}
+
+.size-04 {
+    grid-column: span var(--size-04);
 }
