@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --bg-color: #E1D5C5;
+    --view-height: calc(100vw * 1.4);
+    --grid-size: calc(var(--view-height) * 0.66);
+}
+
+body {
+    background-color: var(--bg-color);
+    width: 100vw;
+    height: var(--view-height);
+    overflow-x: hidden;
+}
+
+#imgs-grid {
+    border: 1px solid red;
+    height: var(--grid-size);
+    width: var(--grid-size);
+    display: grid;
+}
