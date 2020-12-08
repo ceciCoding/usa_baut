@@ -17,7 +17,8 @@
     --size-01: 8;
     --size-02: 12;
     --size-03: 16;
-    --size-04: 32;
+    --size-04: 24;
+    --size-05: 32;
 }
 
 body {
@@ -25,6 +26,10 @@ body {
     width: 100vw;
     height: var(--view-height);
     overflow-x: hidden;
+}
+
+img {
+    width: 100%;
 }
 
 #imgs-grid {
@@ -37,17 +42,117 @@ body {
 }
 
 .size-01 {
-    grid-column: span var(--size-01);
+    grid-column-end: span var(--size-01);
+    grid-row-end: span var(--size-01);
 }
 
 .size-02 {
-    grid-column: span var(--size-02);
+    grid-column-end: span var(--size-02);
+    grid-row-end: span var(--size-02);
 }
 
 .size-03 {
-    grid-column: span var(--size-03);
+    grid-column-end: span var(--size-03);
+    grid-row-end: span var(--size-03);
 }
 
 .size-04 {
-    grid-column: span var(--size-04);
+    grid-column-end: span var(--size-04);
+    grid-row-end: span var(--size-04);
+}
+
+.size-05 {
+    grid-column-end: span var(--size-05);
+    grid-row-end: span var(--size-05);
+}
+
+.middle {
+    grid-column-start: 64;
+}
+
+#two {
+    grid-column-start: 75;
+    grid-row-start: 1;
+}
+
+#three {
+    grid-row-start: 12;
+}
+
+#four {
+    grid-row-start: 21;
+}
+
+#five {
+    grid-column-start: 112;
+    grid-row-start: 45;
+}
+
+#six {
+    grid-column-start: 44;
+    grid-row-start: 21;
+}
+
+#seven {
+    grid-column-start: 80;
+    grid-row-start: 57;
+}
+
+#eight {
+    grid-column-start: 102;
+    grid-row-start: 65;
+}
+
+#nine {
+    grid-column-start: 93;
+    grid-row-start: 74;
+}
+
+#ten {
+    grid-row-start: 54;
+}
+
+#eleven {
+    grid-row-start: 65;
+}
+
+#twelve {
+    grid-row-start: 74;
+}
+
+#thirteen {
+    grid-column-start: 55;
+    grid-row-start: 74;
+}
+
+#fourteen {
+    grid-row-start: 65;
+}
+
+#fifteen {
+    grid-row-start: 75;
+}
+
+#sixteen {
+    grid-column-start: 10;
+    grid-row-start: 65;
+}
+
+#seventeen {
+    grid-column-start: 47;
+    grid-row-start: 88;
+}
+
+#eighteen {
+    grid-row-start: 99;
+}
+
+#nineteen {
+    grid-column-start: 43;
+    grid-row-start: 98;
+}
+
+#twenty {
+    grid-column-start: 56;
+    grid-row-start: 113;
 }
