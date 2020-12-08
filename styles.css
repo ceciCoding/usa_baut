@@ -17,7 +17,6 @@
 :root {
     --bg-color: #E1D5C5;
     --view-height: calc(100vw * 1.4);
-    /* --grid-size: calc(var(--view-height) * 0.66); */
     --grid-size: 95vw;
     --grid-rotation-angle: -45deg;
     --header-rotation-angle: 45deg;
