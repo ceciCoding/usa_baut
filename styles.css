@@ -211,7 +211,7 @@ h2 {
 
 @media screen and (orientation: portrait) {
     body::after {
-        content: "Turn your device to landscape mode";
+        content: "Turn your device to landscape orientation";
         width: 100vw;
         height: 100vh;
         background-color: rgb(0,0,0);
