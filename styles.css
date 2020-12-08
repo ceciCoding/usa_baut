@@ -27,4 +27,6 @@ body {
     height: var(--grid-size);
     width: var(--grid-size);
     display: grid;
+    grid-template-columns: repeat(120, 1fr);
+    grid-template-rows: repeat(120, 1fr);
 }
