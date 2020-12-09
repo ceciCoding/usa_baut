@@ -118,6 +118,7 @@ h2 {
     grid-column-start: 20;
     grid-row-start: 50;
     grid-column-end: span 40;
+    grid-row-end: span 10;
     transform: rotate(var(--header-rotation-angle));
 }
 
@@ -208,7 +209,7 @@ h2 {
     grid-row-start: 113;
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (max-width: 500px) {
     body::after {
         content: "Turn your device to landscape orientation";
         width: 100vw;
